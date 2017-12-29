@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            grid-gap: 10px;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper >div:nth-child(odd){
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto impedit dolore asperiores id eos quisquam quibusdam esse molestias saepe, enim ex ea recusandae delectus mollitia tempora, quaerat nostrum eius commodi. Quam explicabo nesciunt, ut rerum distinctio iste in odit est hic earum quis ducimus ipsa error quaerat a blanditiis, ipsam non laboriosam porro, reiciendis pariatur facilis? Alias voluptatem similique veniam! Officia facere, amet unde suscipit commodi voluptatem. Ad facere perferendis tempore voluptas officia eligendi, necessitatibus quaerat quia, labore debitis vero!</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, temporibus est blanditiis aliquam praesentium asperiores perferendis ducimus deleniti voluptate incidunt enim eligendi, totam animi ad quae soluta nobis et aspernatur, reiciendis sapiente? Maxime recusandae modi consectetur eligendi aut quibusdam dicta.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto impedit dolore asperiores id eos quisquam quibusdam esse molestias saepe, enim ex ea recusandae delectus mollitia tempora, quaerat nostrum eius commodi. Quam explicabo nesciunt, ut rerum distinctio iste in odit est hic earum quis ducimus ipsa error quaerat a blanditiis, ipsam non laboriosam porro, reiciendis pariatur facilis? Alias voluptatem similique veniam! Officia facere, amet unde suscipit commodi voluptatem. Ad facere perferendis tempore voluptas officia eligendi, necessitatibus quaerat quia, labore debitis vero!</div>
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, temporibus est blanditiis aliquam praesentium asperiores perferendis ducimus deleniti voluptate incidunt enim eligendi, totam animi ad quae soluta nobis et aspernatur, reiciendis sapiente? Maxime recusandae modi consectetur eligendi aut quibusdam dicta.</div>
+    </div>
+</html>

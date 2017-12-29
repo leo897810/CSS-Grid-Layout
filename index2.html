@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /* grid-template-columns: repeat(4,1fr 2fr); */
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            grid-gap: 10px;
+        }
+        .wrapper >div{
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+        .nested >div{
+            background: #eee;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut tempore, suscipit cum aliquid temporibus autem amet obcaecati fuga minima distinctio expedita natus quasi, rem mollitia commodi placeat cupiditate consequuntur asperiores aspernatur! Magni quo maxime fuga perferendis rerum corrupti ad minima!</div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente numquam quas debitis, nihil at possimus molestiae officiis aliquid nostrum tenetur magnam iusto ipsum inventore ipsa cupiditate maiores. Obcaecati esse, hic sit accusamus, adipisci quae animi neque inventore, ex ratione asperiores ipsum quidem provident ipsa tenetur et! Fugiat iusto, id reiciendis voluptatem architecto velit quo alias qui enim, ullam excepturi accusantium maxime obcaecati aut vitae corporis incidunt. Non aliquid debitis unde vel, voluptatum quisquam voluptate, veniam, possimus architecto dolorem ipsa voluptas.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+</html>
